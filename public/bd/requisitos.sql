@@ -92,6 +92,8 @@ CREATE  TABLE IF NOT EXISTS `mydb`.`requisito` (
   `tipo_requisito` ENUM('funcional','nao_funcional') NULL ,
   `impacto_arquitetura` ENUM('baixa','media','alta') NOT NULL ,
   `descricao` VARCHAR(45) NULL ,
+  `data_inicio` DATE NOT NULL ,
+  `data_final` DATE NULL ,
   `id_requisito` INT NULL ,
   `id_projeto` INT NOT NULL ,
   `cliente_contato_id` INT NULL ,
